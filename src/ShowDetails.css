@@ -15,7 +15,7 @@ body{
 .name h3{
     font-size: 3rem;
     color: #3a97d4;
-    margin: 0px auto 30px;   
+    margin: 20px auto 30px;   
 }
 .image_container{
     display: flex;
@@ -61,6 +61,13 @@ a{
     margin: 10px;
     color: white;
 }
+.ticket_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
 .ticket{
     width: 500px;
     height: 400px;
@@ -95,4 +102,70 @@ a{
 form button{
     width: 125px;
     margin: 50px 110px;
+}
+@media (min-width: 768px) and (max-width: 1000px){
+    .image_container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .image_container img{
+        margin: 20px auto 10px;
+        width: 400px;
+        height: 600px;
+    }
+    .name h3{
+        margin-top: 50px;
+    }
+    .summary p{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .summary button{
+        width: 300px;
+        font-size: 2rem;
+        border-radius: 10px;
+    }
+    .rating{
+        margin: 50px 0px 20px 50px;
+    }
+    .rating h4{
+        font-size: 3rem;
+    }
+    .rating h5{
+        font-size: 3rem;
+    }
+    .ticket{
+        width: 700px;
+        height: 800px;
+    }
+    .ticket h2{
+        font-size: 4rem;
+    }
+    .show_name{
+        display: flex;
+        gap:30px;
+        width: 500px;
+        margin: 0;
+    }
+    .show_name p{
+        margin: 0;
+        font-size: 3rem;
+    }
+    .show_name label{
+        font-size: 3rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    form button{
+        width: 250px;
+        height: 50px;
+        margin: 50px 110px;
+        font-size: 2rem;
+        padding: 5px;
+    }
 }

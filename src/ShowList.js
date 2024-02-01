@@ -34,6 +34,7 @@ const ShowList = () => {
                         <h2>{show.show.name}</h2>
                         {show.show.image && show.show.image.medium && (
                             <img
+                            className='img'
                             src={show.show.image.medium}
                             alt={`Poster for ${show.show.name}`}
                             />

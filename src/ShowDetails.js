@@ -88,12 +88,13 @@ const ShowDetails = ({ match }) => {
             )}
 
             {bookingFormVisible && (
+                <div class="ticket_container">
                 <div class="ticket">
                     <h2>Show Ticket</h2>
                     <form onSubmit={handleBookingFormSubmit}>
                         <div class="show_name">
                             <label>
-                                Movie Name 
+                                Movie 
                             </label>
                             <p>{show ? show.name : 'N/A'}</p>
                         </div>
@@ -102,9 +103,10 @@ const ShowDetails = ({ match }) => {
                         <Input label="Phone Number" type="number" placeholder="Enter your number..."  value={userNum} onChange={(e) => setUserNum(e.target.value)} required/>
                         <button type="submit">Submit</button>
                     </form>
-                </div>
+                </div></div>
             )}
         </div>
+        
     );
 };
 
